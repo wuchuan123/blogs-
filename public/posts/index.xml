@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hugo Hermit</title>
+    <link>https://example.com/posts/</link>
+    <description>Recent content in Posts on Hugo Hermit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 26 Dec 2019 13:12:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何使用hugo写博客</title>
+      <link>https://example.com/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%86%99%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 26 Dec 2019 13:12:19 +0800</pubDate>
+      
+      <guid>https://example.com/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%86%99%E5%8D%9A%E5%AE%A2/</guid>
+      <description>环境搭建   你需要FQ
+  安装VSCode
+  安装GIT
+  安装cmder fdf
+  安装hugo
+  hugo官方安装教程
+  注意检查本地PATH路径是否有hugo启动路径
+  cmder中输入下列代码检查是否安装成功
+   hugo version hugo快速开始   hugo官网
+  点击Quick Start
+  按官方教程一步步做
+  注意事项：   步骤2 quickstart 文件夹命名更改格式: 你的github用户名.github.io-xxx
+  步骤3 可以更改博客主题，新手不建议更改
+  hugo操作完毕。
+上传至GitHub**   到你创建博客文件夹的根目录创建一个文件,命名为.gitignore,在里面输入/public/
+  进入public文件夹,输入下列代码
+  git init git add.</description>
+    </item>
+    
+  </channel>
+</rss>
