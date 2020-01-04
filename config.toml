@@ -2,7 +2,7 @@ baseURL = "https://example.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Hugo Hermit"
-themes = "hermit"
+theme = "hermit"
 # enableGitInfo = true
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
@@ -78,3 +78,4 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     name = "About"
     url = "about-hugo/"
     weight = 20
+
