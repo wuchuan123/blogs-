@@ -1,7 +1,7 @@
-baseURL = "https://example.com"
-languageCode = "en-us"
+baseURL = "https://wuchuan.monster"
+languageCode = "zn-cn"
 defaultContentLanguage = "en"
-title = "Hugo Hermit"
+title = "Wu Chuan Blogs"
 theme = "hermit"
 # enableGitInfo = true
 pygmentsCodefences  = true
@@ -14,7 +14,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 # disqusShortname = "yourdiscussshortname"
 
 [author]
-  name = "John Doe"
+  name = "Chuan"
 
 [blackfriday]
   # hrefTargetBlank = true
@@ -36,8 +36,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # images = [""]
   themeColor = "#494f5c"
 
-  homeSubtitle = "A minimal and fast theme for Hugo."
-  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  homeSubtitle = "Daily records Reading notes Study notes"
+  footerCopyright = ' &#183; <a href="https://google.com" target="_blank" rel="noopener">Google</a>'
   # bgImg = ""  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
@@ -60,8 +60,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     url = "https://twitter.com/"
 
   [[params.social]]
-    name = "instagram"
-    url = "https://instagram.com/"
+    name = "facebook"
+    url = "https://www.facebook.com/"
 
   [[params.social]]
     name = "github"
@@ -76,6 +76,6 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   [[menu.main]]
     name = "About"
-    url = "about-hugo/"
+    url = "wuchuan"
     weight = 20
 

@@ -1,25 +1,948 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Posts on Hugo Hermit</title>
-		<link>https://example.com/posts/</link>
-		<description>Recent content in Posts on Hugo Hermit</description>
+		<title>Posts on Wu Chuan Blogs</title>
+		<link>https://wuchuan.monster/posts/</link>
+		<description>Recent content in Posts on Wu Chuan Blogs</description>
 		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
+		<language>zn-cn</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Thu, 26 Dec 2019 13:12:19 +0800</lastBuildDate>
-		<atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		<lastBuildDate>Wed, 01 Jan 2020 13:12:19 +0800</lastBuildDate>
+		<atom:link href="https://wuchuan.monster/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>JavaSript的诞生</title>
+			<link>https://wuchuan.monster/posts/javasript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+			<pubDate>Wed, 01 Jan 2020 13:12:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/javasript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+			<description>JavaScirpt 创始人 1995 年，网景招募了布兰登·艾克，目标是把 Scheme 语言嵌入到 Netscape Navigator 浏览器当中。但更早之前，网景已经跟昇阳合作在 Netscape Navigator 中支持 Java，这时网景内部产生激烈的争论。后来网景决定发明一种与 Java 搭配使用的辅助脚本语言并且语法上有些类似，这个决策导致排除了采用现有的语言，例如 Perl、Python、Tcl 或 Scheme。为了在其他竞争提案中捍卫 JavaScript 这个想法，公司需要有一个可以运作的原型。艾克在 1995 年 5 月仅花了十天时间就把原型设计出来了。
+JavaScirpt 标准化 1996 年 11 月，网景正式向 ECMA（欧洲计算机制造商协会）提交语言标准。1997 年 6 月，ECMA 以 JavaScript 语言为基础制定了 ECMAScript 标准规范 ECMA-262。JavaScript 成为了 ECMAScript 最著名的实现之一[16]。除此之外，ActionScript 和 JScript 也都是 ECMAScript 规范的实现语言。尽管 JavaScript 作为给非程序人员的脚本语言，而非作为给程序人员的脚本语言来推广和宣传，但是 JavaScript 具有非常丰富的特性。
+ 1997 年 6 月，第一版 ECMAScript 发布 1999 年 12 月，第三版发布，这个版本使用最广 2009 年 12 月，第五版发布，增加了一些新功能 2015 年 6 月，第六版发布，新浏览器都支持这一版本 之后每年发布一版，版本号以年饭命名  JavaScirpt 和 ECMAScript 的关系  ECMAScript 是纸上的标准，JS 是浏览器的实现 纸上标准往往落后于浏览器，先实现，再写进标准  JS 的兴起  IE 市场份额巨大导致 JS 停滞了 10 年，直至 Chrome 主导市场地位，才有了后面的每年更新 移动市场的兴起，手机上没人会安装 IE 浏览器 2004 年愚人节，谷歌发布 Gmail 在线网页为前端带来无限可能 2005 年，Jesse 将谷歌用到的技术命名为 AJAX，前端技术正式出现 2006 年，jQuery 发布，是目前最长寿的 JS 库，后来 IE 不行了，jQuery 才稍微没那么火  JS 爆发  Chrome 的 JS 引擎叫做 V8 2009 年，Ryan 基于 V8 创建了 Node.</description>
+			<content type="html"><![CDATA[<h4 id="javascirpt-">JavaScirpt 创始人</h4>
+<p><img src="/images/BEich.jpg" alt="URL"></p>
+<p>1995 年，网景招募了布兰登·艾克，目标是把 Scheme 语言嵌入到 Netscape Navigator 浏览器当中。但更早之前，网景已经跟昇阳合作在 Netscape Navigator 中支持 Java，这时网景内部产生激烈的争论。后来网景决定发明一种与 Java 搭配使用的辅助脚本语言并且语法上有些类似，这个决策导致排除了采用现有的语言，例如 Perl、Python、Tcl 或 Scheme。为了在其他竞争提案中捍卫 JavaScript 这个想法，公司需要有一个可以运作的原型。艾克在 1995 年 5 月仅花了十天时间就把原型设计出来了。</p>
+<h3 id="javascirpt--1">JavaScirpt 标准化</h3>
+<p>1996 年 11 月，网景正式向 ECMA（欧洲计算机制造商协会）提交语言标准。1997 年 6 月，ECMA 以 JavaScript 语言为基础制定了 ECMAScript 标准规范 ECMA-262。JavaScript 成为了 ECMAScript 最著名的实现之一[16]。除此之外，ActionScript 和 JScript 也都是 ECMAScript 规范的实现语言。尽管 JavaScript 作为给非程序人员的脚本语言，而非作为给程序人员的脚本语言来推广和宣传，但是 JavaScript 具有非常丰富的特性。</p>
+<ul>
+<li>1997 年 6 月，第一版 ECMAScript 发布</li>
+<li>1999 年 12 月，第三版发布，这个版本使用最广</li>
+<li>2009 年 12 月，第五版发布，增加了一些新功能</li>
+<li>2015 年 6 月，第六版发布，新浏览器都支持这一版本</li>
+<li>之后每年发布一版，版本号以年饭命名</li>
+</ul>
+<h3 id="javascirpt--ecmascript-">JavaScirpt 和 ECMAScript 的关系</h3>
+<ul>
+<li>ECMAScript 是纸上的标准，JS 是浏览器的实现</li>
+<li>纸上标准往往落后于浏览器，先实现，再写进标准</li>
+</ul>
+<h3 id="js-">JS 的兴起</h3>
+<ul>
+<li>IE 市场份额巨大导致 JS 停滞了 10 年，直至 Chrome 主导市场地位，才有了后面的每年更新</li>
+<li>移动市场的兴起，手机上没人会安装 IE 浏览器</li>
+<li>2004 年愚人节，谷歌发布 Gmail 在线网页为前端带来无限可能</li>
+<li>2005 年，Jesse 将谷歌用到的技术命名为 AJAX，前端技术正式出现</li>
+<li>2006 年，jQuery 发布，是目前最长寿的 JS 库，后来 IE 不行了，jQuery 才稍微没那么火</li>
+</ul>
+<h3 id="js--1">JS 爆发</h3>
+<ul>
+<li>Chrome 的 JS 引擎叫做 V8</li>
+<li>2009 年，Ryan 基于 V8 创建了 Node.js</li>
+<li>2010 年 Isaac 基于 Node.js 写出了 npm,前端工程师可以在浏览器之外执行 JS 了，Node.js 快速风靡</li>
+<li>同年，TJ 受 Sinatra 启发，发不了 Express.js，从此，前端工程师可以愉快的写后端应用了</li>
+</ul>
+<h3 id="heading">总结</h3>
+<ul>
+<li>JS 是历史的选择
+<ul>
+<li>一开始浏览器支持很多东西：Java、Flash、VBScript</li>
+<li>只有 JS 活到了最后</li>
+</ul>
+</li>
+<li>JS 的低开高走
+<ul>
+<li>一开始 JS 就是一个玩具语言，但是 JS 每次都走对了风口</li>
+</ul>
+</li>
+</ul>
+]]></content>
+		</item>
+		
+		<item>
+			<title>JS对象的基本用法</title>
+			<link>https://wuchuan.monster/posts/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+			<pubDate>Wed, 01 Jan 2020 13:12:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+			<description>1. 声明对象的两种语法 示例：
+let obj = {&amp;#39;name&amp;#39;: &amp;#39;frank&amp;#39;, &amp;#39;age&amp;#39;: 18}let obj = new Object({&amp;#39;name&amp;#39;: &amp;#39;frank&amp;#39;, &amp;#39;age&amp;#39;: 18})// 一般使用第一种2. 如何删除对象的属性   delete 命令用于删除对象的属性，删除成功后返回 true。
+  delete obj.xxx 或者 delete obj[&amp;lsquo;xxx&amp;rsquo;] 这俩种都可以删除对象属性。
+  下面代码中，delete命令删除对象obj的p属性。删除后，再读取p属性就会返回undefined，而且Object.keys方法的返回值也不再包括该属性。
+var obj = { p: 1 };Object.keys(obj) // [&amp;#34;p&amp;#34;]delete obj.p // trueobj.p // undefinedObject.keys(obj) // []  3. 如何查看对象的属性   查看一个对象本身的所有属性，可以使用Object.keys方法。
+var obj = {key1: 1,key2: 2};Object.</description>
+			<content type="html"><![CDATA[<h3 id="1-">1. 声明对象的两种语法</h3>
+<p>示例：</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="o">:</span> <span class="s1">&#39;frank&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="mi">18</span><span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">(</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="o">:</span> <span class="s1">&#39;frank&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="mi">18</span><span class="p">}</span><span class="p">)</span>
+<span class="c1">// 一般使用第一种
+</span></code></pre></div><h3 id="2-">2. 如何删除对象的属性</h3>
+<ul>
+<li>
+<p>delete 命令用于删除对象的属性，删除成功后返回 true。</p>
+</li>
+<li>
+<p>delete obj.xxx 或者 delete obj[&lsquo;xxx&rsquo;] 这俩种都可以删除对象属性。</p>
+</li>
+<li>
+<p>下面代码中，<strong>delete</strong>命令删除对象<strong>obj</strong>的<strong>p</strong>属性。删除后，再读取<strong>p</strong>属性就会返回<strong>undefined</strong>，而且<strong>Object.keys</strong>方法的返回值也不再包括该属性。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">p</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}</span><span class="p">;</span>
+<span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="c1">// [&#34;p&#34;]
+</span><span class="c1"></span><span class="k">delete</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">p</span> <span class="c1">// true
+</span><span class="c1"></span><span class="nx">obj</span><span class="p">.</span><span class="nx">p</span> <span class="c1">// undefined
+</span><span class="c1"></span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="c1">// []
+</span></code></pre></div></li>
+</ul>
+<h3 id="3-">3. 如何查看对象的属性</h3>
+<ul>
+<li>
+<p>查看一个对象本身的所有属性，可以使用<strong>Object.keys</strong>方法。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+<span class="nx">key1</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+<span class="nx">key2</span><span class="o">:</span> <span class="mi">2</span>
+  <span class="p">}</span><span class="p">;</span>
+
+<span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span><span class="p">;</span>
+<span class="c1">// [&#39;key1&#39;, &#39;key2&#39;]
+</span></code></pre></div></li>
+</ul>
+<h3 id="4-">4. 如何修改或增加对象的属性</h3>
+<ul>
+<li>
+<p>修改自身属性，直接赋值，如下代码：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;frank&#34;</span> <span class="p">}</span><span class="p">;</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span> <span class="c1">//&#34;frank&#34;
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">key</span> <span class="o">=</span> <span class="s2">&#34;name&#34;</span><span class="p">;</span>
+<span class="nx">obj</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">===</span> <span class="s2">&#34;frank&#34;</span><span class="p">;</span> <span class="c1">//true
+</span></code></pre></div></li>
+<li>
+<p>批量赋值，如下代码:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="p">{</span> <span class="nx">color</span><span class="o">:</span> <span class="s2">&#34;red&#34;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">18</span> <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+</code></pre></div></li>
+<li>
+<p>修改共有属性</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">[</span><span class="s2">&#34;toString&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;xxx&#34;</span><span class="p">;</span>
+<span class="c1">//
+</span><span class="c1"></span><span class="nx">obj</span><span class="p">.</span><span class="nx">__proto__</span><span class="p">[</span><span class="s2">&#34;toString&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;xxx&#34;</span><span class="p">;</span>
+<span class="c1">//不推荐这种
+</span></code></pre></div></li>
+<li>
+<p>改原型</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">common</span><span class="p">)</span><span class="p">;</span>
+<span class="c1">//
+</span><span class="c1"></span><span class="nx">obj</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">=</span> <span class="nx">common</span><span class="p">;</span>
+<span class="c1">//不推荐这种
+</span></code></pre></div></li>
+<li>
+<p>增加属性</p>
+<p>基本和改一样，已有属性则该，没有属性就增加；</p>
+</li>
+</ul>
+<h3 id="5-name-in-obj--objhasownpropertyname-">5. &lsquo;name&rsquo; in obj 和 obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别</h3>
+<ul>
+<li>他们俩个都是判断属性名是否存在在对象里</li>
+<li>区别是<strong>in</strong> 会继承原型链上的属性，而 obj.hasOwnPropert 不会继承原型链的属性。</li>
+</ul>
+]]></content>
+		</item>
+		
+		<item>
+			<title>JS的基本语法</title>
+			<link>https://wuchuan.monster/posts/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+			<pubDate>Wed, 01 Jan 2020 13:12:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+			<description>什么是表达式和语句 JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。
+语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句。
+var a = 1 + 3;这条语句先用 var 命令，声明了变量 a ，然后将 1 + 3 的运算结果赋值给变量 a。
+1 + 3叫做表达式（expression），指一个为了得到返回值的计算式。语句和表达式的区别在于，前者主要为了进行某种操作，一般情况下不需要返回值；后者则是为了得到返回值，一定会返回一个值。凡是 JavaScript 语言中预期为值的地方，都可以使用表达式。比如，赋值语句的等号右边，预期是一个值，因此可以放置各种表达式。
+语句以分号结尾，一个分号就表示一个语句结束。多个语句可以写在一行内。
+var a = 1 + 3 ; var b = &amp;#39;abc&amp;#39;;分号前面可以没有任何内容，JavaScript 引擎将其视为空语句。
+;;;上面的代码就表示 3 个空语句。
+表达式不需要分号结尾。一旦在表达式后面添加分号，则 JavaScript 引擎就将表达式视为语句，这样会产生一些没有任何意义的语句。
+1 + 3;&amp;#39;abc&amp;#39;;上面两行语句只是单纯地产生一个值，并没有任何实际的意义。
+   标识符的规则 标识符（identifier）指的是用来识别各种值的合法名称。最常见的标识符就是变量名，以及后面要提到的函数名。JavaScript 语言的标识符对大小写敏感，所以 a 和 A 是两个不同的标识符。
+标识符有一套命名规则，不符合规则的就是非法标识符。JavaScript 引擎遇到非法标识符，就会报错。
+ 第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_）。 第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字 0-9。  简单说，标识符命名规则如下。</description>
+			<content type="html"><![CDATA[<ol>
+<li>
+<p>什么是表达式和语句
+JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。</p>
+<p>语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="p">;</span>
+</code></pre></div><p>这条语句先用 <strong>var</strong> 命令，声明了变量 <strong>a</strong> ，然后将 <strong>1 + 3</strong> 的运算结果赋值给变量 a。</p>
+<p><strong>1 + 3</strong>叫做表达式（expression），指一个为了得到返回值的计算式。语句和表达式的区别在于，前者主要为了进行某种操作，一般情况下不需要返回值；后者则是为了得到返回值，一定会返回一个值。凡是 JavaScript 语言中预期为值的地方，都可以使用表达式。比如，赋值语句的等号右边，预期是一个值，因此可以放置各种表达式。</p>
+<p>语句以分号结尾，一个分号就表示一个语句结束。多个语句可以写在一行内。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span> <span class="p">;</span> <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="s1">&#39;abc&#39;</span><span class="p">;</span>
+</code></pre></div><p>分号前面可以没有任何内容，JavaScript 引擎将其视为空语句。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="p">;</span><span class="p">;</span><span class="p">;</span>
+</code></pre></div><p>上面的代码就表示 3 个空语句。</p>
+<p>表达式不需要分号结尾。一旦在表达式后面添加分号，则 JavaScript 引擎就将表达式视为语句，这样会产生一些没有任何意义的语句。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="p">;</span>
+<span class="s1">&#39;abc&#39;</span><span class="p">;</span>
+</code></pre></div><p>上面两行语句只是单纯地产生一个值，并没有任何实际的意义。</p>
+</li>
+</ol>
+<ol start="2">
+<li>
+<p>标识符的规则
+标识符（identifier）指的是用来识别各种值的合法名称。最常见的标识符就是变量名，以及后面要提到的函数名。JavaScript 语言的标识符对大小写敏感，所以 <strong>a</strong> 和 <strong>A</strong> 是两个不同的标识符。</p>
+<p>标识符有一套命名规则，不符合规则的就是非法标识符。JavaScript 引擎遇到非法标识符，就会报错。</p>
+<ul>
+<li>第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_）。</li>
+<li>第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字 0-9。</li>
+</ul>
+<p>简单说，标识符命名规则如下。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="nx">arg0</span>
+<span class="nx">_tmp</span>
+<span class="nx">$elem</span>
+<span class="nx">π</span>
+</code></pre></div><p>下面这些则是不合法的标识符。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="mi">1</span><span class="nx">a</span>  <span class="c1">// 第一个字符不能是数字
+</span><span class="c1"></span><span class="mi">23</span>  <span class="c1">// 同上
+</span><span class="c1"></span><span class="o">*</span><span class="o">*</span><span class="o">*</span>  <span class="c1">// 标识符不能包含星号
+</span><span class="c1"></span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span>  <span class="c1">// 标识符不能包含加号
+</span><span class="c1"></span><span class="o">-</span><span class="nx">d</span>  <span class="c1">// 标识符不能包含减号或连词线
+</span></code></pre></div><p>中文是合法的标识符，可以用作变量名。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">临时变量</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</code></pre></div></li>
+<li>
+<p>if else 语句</p>
+<h4 id="if-">if 结构</h4>
+<p><strong>if</strong>结构先判断一个表达式的布尔值，然后根据布尔值的真伪，执行不同的语句。所谓布尔值，指的是 JavaScript 的两个特殊值，<strong>true</strong>表示真，<strong>false</strong>表示伪。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">if</span> <span class="p">(</span><span class="nx">布尔值</span><span class="p">)</span>
+    <span class="nx">语句</span><span class="p">;</span>
+
+<span class="c1">// 或者
+</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="nx">布尔值</span><span class="p">)</span> <span class="nx">语句</span><span class="p">;</span>
+</code></pre></div><p>上面是<strong>if</strong>结构的基本形式。需要注意的是，“布尔值”往往由一个条件表达式产生的，必须放在圆括号中，表示对表达式求值。如果表达式的求值结果为<strong>true</strong>，就执行紧跟在后面的语句；如果结果为<strong>false</strong>，则跳过紧跟在后面的语句。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">if</span> <span class="p">(</span><span class="nx">m</span> <span class="o">===</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="nx">m</span> <span class="o">=</span> <span class="nx">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</code></pre></div><p>上面代码表示，只有在<strong>m</strong>等于 3 时，才会将其值加上 1。</p>
+<p>这种写法要求条件表达式后面只能有一个语句。如果想执行多个语句，必须在<strong>if</strong>的条件判断之后，加上大括号，表示代码块（多个语句合并成一个语句）。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">if</span> <span class="p">(</span><span class="nx">m</span> <span class="o">===</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">m</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>建议总是在<strong>if</strong>语句中使用大括号，因为这样方便插入语句。</p>
+<p>注意，if 后面的表达式之中，不要混淆赋值表达式（=）、严格相等运算符（===）和相等运算符（==）。尤其是赋值表达式不具有比较作用。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// &#34;2&#34;
+</span></code></pre></div><p>上面代码的原意是，当<strong>x</strong>等于<strong>y</strong>的时候，才执行相关语句。但是，不小心将严格相等运算符写成赋值表达式，结果变成了将<strong>y</strong>赋值给变量<strong>x</strong>，再判断变量 x 的值（等于 2）的布尔值（结果为<strong>true</strong>）。</p>
+<p>这种错误可以正常生成一个布尔值，因而不会报错。为了避免这种情况，有些开发者习惯将常量写在运算符的左边，这样的话，一旦不小心将相等运算符写成赋值运算符，就会报错，因为常量不能被赋值。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 不报错
+</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="mi">2</span> <span class="o">=</span> <span class="nx">x</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 报错
+</span></code></pre></div><h4 id="ifelse-">if&hellip;else 结构</h4>
+<p><strong>if</strong>代码块后面，还可以跟一个<strong>else</strong>代码块，表示不满足条件时，所要执行的代码。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">if</span> <span class="p">(</span><span class="nx">m</span> <span class="o">===</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// 满足条件时，执行的语句
+</span><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="c1">// 不满足条件时，执行的语句
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></div><p>上面代码判断变量<strong>m</strong>是否等于3，如果等于就执行<strong>if</strong>代码块，否则执行<strong>else</strong>代码块。</p>
+<p>对同一个变量进行多次判断时，多个<strong>if&hellip;else</strong>语句可以连写在一起。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">if</span> <span class="p">(</span><span class="nx">m</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// ...
+</span><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">m</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// ...
+</span><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">m</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// ...
+</span><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="c1">// ...
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></div><p>else代码块总是与离自己最近的那个if语句配对。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">m</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">m</span> <span class="o">!==</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span><span class="p">;</span>
+<span class="k">else</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">)</span><span class="p">;</span>
+</code></pre></div><p>上面代码不会有任何输出，else代码块不会得到执行，因为它跟着的是最近的那个if语句，相当于下面这样。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">if</span> <span class="p">(</span><span class="nx">m</span> <span class="o">!==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">)</span><span class="p">;</span>
+     <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>如果想让else代码块跟随最上面的那个if语句，就要改变大括号的位置。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">if</span> <span class="p">(</span><span class="nx">m</span> <span class="o">!==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// world
+</span></code></pre></div></li>
+</ol>
+<ol>
+<li>
+<p>while for 语句</p>
+<h4 id="while-">while 循环</h4>
+<p><strong>while</strong>语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">while</span> <span class="p">(</span><span class="nx">条件</span><span class="p">)</span>
+    <span class="nx">语句</span><span class="p">;</span>
+
+<span class="c1">// 或者
+</span><span class="c1"></span><span class="k">while</span> <span class="p">(</span><span class="nx">条件</span><span class="p">)</span> <span class="nx">语句</span><span class="p">;</span>
+</code></pre></div><p><strong>while</strong>语句的循环条件是一个表达式，必须放在圆括号中。代码块部分，如果只有一条语句，可以省略大括号，否则就必须加上大括号。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">while</span> <span class="p">(</span><span class="nx">条件</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">语句</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>下面是<strong>while</strong>语句的一个例子。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;i 当前为：&#39;</span> <span class="o">+</span> <span class="nx">i</span><span class="p">)</span><span class="p">;</span>
+    <span class="nx">i</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>上面的代码将循环 100 次，直到 i 等于 100 为止。</p>
+<p>下面的例子是一个无限循环，因为循环条件总是为真。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><h4 id="for-">for 循环</h4>
+<p><strong>for</strong>语句是循环命令的另一种形式，可以指定循环的起点、终点和终止条件。它的格式如下。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">for</span> <span class="p">(</span><span class="nx">初始化表达式</span><span class="p">;</span> <span class="nx">条件</span><span class="p">;</span> <span class="nx">递增表达式</span><span class="p">)</span>
+    <span class="nx">语句</span>
+
+<span class="c1">// 或者
+</span><span class="c1"></span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">初始化表达式</span><span class="p">;</span> <span class="nx">条件</span><span class="p">;</span> <span class="nx">递增表达式</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">语句</span>
+<span class="p">}</span>
+</code></pre></div><p><strong>for</strong>语句后面的括号里面，有三个表达式。</p>
+<ul>
+<li>初始化表达式（initialize）：确定循环变量的初始值，只在循环开始时执行一次。</li>
+<li>条件表达式（test）：每轮循环开始时，都要执行这个条件表达式，只有值为真，才继续进行循环。</li>
+<li>递增表达式（increment）：每轮循环的最后一个操作，通常用来递增循环变量。</li>
+</ul>
+<p>下面是一个例子。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">x</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// 0
+</span><span class="c1"></span><span class="c1">// 1
+</span><span class="c1"></span><span class="c1">// 2
+</span></code></pre></div><p>上面代码中，初始化表达式是 var i = 0，即初始化一个变量 i；测试表达式是 i &lt; x，即只要 i 小于 x，就会执行循环；递增表达式是 i++，即每次循环结束后，i 增大 1。</p>
+<p>所有for循环，都可以改写成while循环。上面的例子改为while循环，代码如下。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="p">;</span>
+    <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>for语句的三个部分（initialize、test、increment），可以省略任何一个，也可以全部省略。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="p">;</span> <span class="p">)</span><span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>上面代码省略了for语句表达式的三个部分，结果就导致了一个无限循环。</p>
+</li>
+<li>
+<p>break continue</p>
+<p><strong>break</strong>语句和<strong>continue</strong>语句都具有跳转作用，可以让代码不按既有的顺序执行。</p>
+<p><strong>break</strong>语句用于跳出代码块或循环。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;i 当前为: &#39;</span> <span class="o">+</span>  <span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+    <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="nx">i</span> <span class="o">===</span> <span class="mi">10</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>上面代码只会执行 10 次循环，一旦<strong>i</strong>等于 10，就会跳出循环。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>     <span class="p">{</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">3</span><span class="p">)</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// 0
+</span><span class="c1"></span><span class="c1">// 1
+</span><span class="c1"></span><span class="c1">// 2
+</span><span class="c1"></span><span class="c1">// 3
+</span></code></pre></div><p>上面代码执行到<strong>i</strong>等于 3，就会跳出循环。</p>
+<p><strong>continue</strong>语句用于立即终止本轮循环，返回循环结构的头部，开始下一轮循环。</p>
+<p><strong>for</strong>循环也可以使用<strong>break</strong>语句跳出循环。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">)</span><span class="p">{</span>
+<span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;i 当前为：&#39;</span> <span class="o">+</span> <span class="nx">i</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>上面代码只有在<strong>i</strong>为奇数时，才会输出<strong>i</strong>的值。如果 i 为偶数，则直接进入下一轮循环。</p>
+<p>如果存在多重循环，不带参数的 break 语句和<strong>continue</strong>语句都只针对最内层循环。</p>
+</li>
+<li>
+<p>label</p>
+<p>JavaScript 语言允许，语句的前面有标签（label），相当于定位符，用于跳转到程序的任意位置，标签的格式如下。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="nx">label</span><span class="o">:</span>
+<span class="nx">语句</span>
+</code></pre></div><p>标签可以是任意的标识符，但不能是保留字，语句部分可以是任意语句。</p>
+<p>标签通常与<strong>break</strong>语句和<strong>continue</strong>语句配合使用，跳出特定的循环。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="nx">top</span><span class="o">:</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span><span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">j</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">break</span> <span class="nx">top</span><span class="p">;</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;i=&#39;</span> <span class="o">+</span> <span class="nx">i</span> <span class="o">+</span> <span class="s1">&#39;, j=&#39;</span> <span class="o">+</span> <span class="nx">j</span><span class="p">)</span><span class="p">;</span>
+         <span class="p">}</span>
+    <span class="p">}</span>
+<span class="c1">// i=0, j=0
+</span><span class="c1"></span><span class="c1">// i=0, j=1
+</span><span class="c1"></span><span class="c1">// i=0, j=2
+</span><span class="c1"></span><span class="c1">// i=1, j=0
+</span></code></pre></div><p>上面代码为一个双重循环区块，break 命令后面加上了 top 标签（注意，top 不用加引号），满足条件时，直接跳出双层循环。如果 break 语句后面不使用标签，则只能跳出内层循环，进入下一次的外层循环。</p>
+<p>标签也可以用于跳出代码块。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="nx">foo</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">break</span> <span class="nx">foo</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;本行不会输出&#39;</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="p">;</span>
+<span class="c1">// 1
+</span><span class="c1"></span><span class="c1">// 2
+</span></code></pre></div><p>上面代码执行到<strong>break foo</strong>，就会跳出区块。</p>
+<p>continue 语句也可以与标签配合使用。</p>
+<div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="nx">top</span><span class="o">:</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span><span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">j</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">continue</span> <span class="nx">top</span><span class="p">;</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;i=&#39;</span> <span class="o">+</span> <span class="nx">i</span> <span class="o">+</span> <span class="s1">&#39;, j=&#39;</span> <span class="o">+</span> <span class="nx">j</span><span class="p">)</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="c1">// i=0, j=0
+</span><span class="c1"></span><span class="c1">// i=0, j=1
+</span><span class="c1"></span><span class="c1">// i=0, j=2
+</span><span class="c1"></span><span class="c1">// i=1, j=0
+</span><span class="c1"></span><span class="c1">// i=2, j=0
+</span><span class="c1"></span><span class="c1">// i=2, j=1
+</span><span class="c1"></span><span class="c1">// i=2, j=2
+</span></code></pre></div><p>上面代码中，<strong>continue</strong>命令后面有一个标签名，满足条件时，会跳过当前循环，直接进入下一轮外层循环。如果<strong>continue</strong>语句后面不使用标签，则只能进入下一轮的内层循环。</p>
+</li>
+</ol>
+<h3 id="7-">7. 参考链接</h3>
+<p>摘录至阮一峰的 JavaScript 教程<a href="https://wangdoc.com/javascript/basic/grammar.html#%E6%A0%87%E8%AF%86%E7%AC%A6">JavaScript 教程</a></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>CSS 知识总结</title>
+			<link>https://wuchuan.monster/posts/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+			<pubDate>Tue, 31 Dec 2019 13:12:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+			<description>一. 浏览器渲染原理 CSSOM 树和 DOM 树合并成渲染树，然后用于计算每个可见元素的布局，并输出给绘制流程，将像素渲染到屏幕上。优化上述每一个步骤对实现最佳渲染性能至关重要。
+ DOM 树与 CSSOM 树合并后形成渲染树。 渲染树只包含渲染网页所需的节点。 布局计算每个对象的精确位置和大小。 最后一步是绘制，使用最终渲染树将像素渲染到屏幕上。  第一步是让浏览器将 DOM 和 CSSOM 合并成一个“渲染树”，网罗网页上所有可见的 DOM 内容，以及每个节点的所有 CSSOM 样式信息。
+二. CSS 动画的两种做法（transition 和 animation）   transition CSS 属性是 transition-property(属性名)，transition-duration(时长)，transition-timing-function(过渡方式) 和 transition-delay(延时) 的一个简写属性。
+transition一般配合transform使用；
+transform属性允许你旋转，缩放，倾斜或平移给定元素。这是通过修改 CSS 视觉格式化模型的坐标空间来实现的。 transform有四个常用属性
+ translate 位移 scale 缩放(甚用会出现图片模糊) rotate 旋转 skew 倾斜 他们都作用在 X,Y,Z 轴上； 下面这段代码定义了属性 transition,动画时长 1s，线性移动；    &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--HTML--&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34; /&amp;gt; &amp;lt;title&amp;gt;JS Bin&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;wrapper&amp;#34;&amp;gt; &amp;lt;div id=&amp;#34;demo&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;button id=&amp;#34;button&amp;#34;&amp;gt;开始&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; /*CSS*/ #demo{ width: 100px; height: 100px; border: 1px solid red; margin: 50px; transition: transform 1s linear; } #demo.</description>
+			<content type="html"><![CDATA[<h3 id="-">一. 浏览器渲染原理</h3>
+<p>CSSOM 树和 DOM 树合并成渲染树，然后用于计算每个可见元素的布局，并输出给绘制流程，将像素渲染到屏幕上。优化上述每一个步骤对实现最佳渲染性能至关重要。</p>
+<ul>
+<li>DOM 树与 CSSOM 树合并后形成渲染树。</li>
+<li>渲染树只包含渲染网页所需的节点。</li>
+<li>布局计算每个对象的精确位置和大小。</li>
+<li>最后一步是绘制，使用最终渲染树将像素渲染到屏幕上。</li>
+</ul>
+<p>第一步是让浏览器将 DOM 和 CSSOM 合并成一个“渲染树”，网罗网页上所有可见的 DOM 内容，以及每个节点的所有 CSSOM 样式信息。</p>
+<p><img src="/images/render-tree-construction.jpg" alt="Image"></p>
+<h3 id="-css-transition--animation">二. CSS 动画的两种做法（transition 和 animation）</h3>
+<ol>
+<li>
+<p><strong>transition CSS</strong> 属性是 transition-property(属性名)，transition-duration(时长)，transition-timing-function(过渡方式) 和 transition-delay(延时) 的一个简写属性。</p>
+<p><strong>transition</strong>一般配合<strong>transform</strong>使用；</p>
+<p><strong>transform</strong>属性允许你旋转，缩放，倾斜或平移给定元素。这是通过修改 CSS 视觉格式化模型的坐标空间来实现的。
+<strong>transform</strong>有四个常用属性</p>
+<ul>
+<li>translate 位移</li>
+<li>scale 缩放(甚用会出现图片模糊)</li>
+<li>rotate 旋转</li>
+<li>skew 倾斜
+他们都作用在 X,Y,Z 轴上；
+下面这段代码定义了属性 transition,动画时长 1s，线性移动；</li>
+</ul>
+</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="c">&lt;!--</span><span class="c">HTML</span><span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p"></span><span class="p">&gt;</span>JS Bin<span class="p">&lt;</span><span class="p">/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;wrapper&#34;</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;demo&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;button&#34;</span><span class="p"></span><span class="p">&gt;</span>开始<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="c">/*CSS*/</span>
+<span class="p">#</span><span class="nn">demo</span><span class="p">{</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">red</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">transition</span><span class="p">:</span> <span class="k">transform</span> <span class="mi">1</span><span class="kt">s</span> <span class="kc">linear</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">demo</span><span class="p">.</span><span class="nc">b</span><span class="p">{</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">translateX</span><span class="p">(</span><span class="mi">200</span><span class="kt">px</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">demo</span><span class="p">.</span><span class="nc">c</span><span class="p">{</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">translateX</span><span class="p">(</span><span class="mi">200</span><span class="kt">px</span><span class="p">)</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">100</span><span class="kt">px</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="c1">//JavaScript
+</span><span class="c1"></span><span class="nx">button</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="p">(</span><span class="p">)</span><span class="p">=&gt;</span><span class="p">{</span>
+
+  <span class="nx">demo</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="p">(</span><span class="p">)</span><span class="p">=&gt;</span><span class="p">{</span>
+    <span class="nx">demo</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+    <span class="nx">demo</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+  <span class="p">}</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div><p>最终效果：</p>
+<p><img src="/images/%E7%A4%BA%E4%BE%8B.gif" alt="示例"></p>
+<ol>
+<li><strong>animation</strong>属性是 animation-name(动画名)，animation-duration(持续时长) animation-timing-function(延时)，animation-delay(延时)，animation-iteration-count(次数)，animation-direction(方向)，animation-fill-mode(填充模式) 和 animation-play-state(状态) 属性的一个简写属性形式。</li>
+</ol>
+<p>下面是一个关于<strong>animation</strong>使用的案例：</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p"></span><span class="p">&gt;</span>JS Bin<span class="p">&lt;</span><span class="p">/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;heart&#34;</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;left&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;right&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bottom&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="c">/*CSS*/</span>
+<span class="o">*</span><span class="p">{</span><span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span><span class="p">}</span>
+<span class="p">#</span><span class="nn">heart</span><span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">inline</span><span class="o">-</span><span class="kc">block</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+  <span class="k">animation</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">s</span> <span class="n">heart</span> <span class="kc">infinite</span> <span class="kc">alternate</span><span class="o">-</span><span class="kc">reverse</span><span class="p">;</span>
+
+<span class="p">}</span>
+<span class="p">@</span><span class="k">keyframes</span> <span class="nt">heart</span> <span class="p">{</span>
+  <span class="nt">0</span><span class="o">%</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">100</span><span class="o">%</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">1.2</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">heart</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">left</span><span class="p">{</span>
+  <span class="k">background</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">45</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">translateX</span><span class="p">(</span><span class="mi">31</span><span class="kt">px</span><span class="p">)</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">left</span><span class="p">:</span> <span class="mi">-50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">heart</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">right</span><span class="p">{</span>
+  <span class="k">background</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">45</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">31</span><span class="kt">px</span><span class="p">)</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">right</span><span class="p">:</span> <span class="mi">-50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span> <span class="mi">50</span><span class="kt">%</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">heart</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">bottom</span><span class="p">{</span>
+  <span class="k">background</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">45</span><span class="kt">deg</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>最终效果：</p>
+<p><img src="/images/%E7%A4%BA%E4%BE%8B2.gif" alt="gif"></p>
+<h3 id="-css-">三. CSS 学法总结</h3>
+<ol>
+<li>CSS 的规则是没有规则</li>
+<li>务必掌握 float、flex 布局，了解 grid 布局</li>
+<li>不懂的 MDN</li>
+<li>调试大法！调试大法！调试大法！</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="nt">border</span><span class="p">:</span><span class="nd">1px</span> <span class="nt">solid</span> <span class="nt">red</span><span class="o">;</span>
+</code></pre></div><ol start="5">
+<li>起手式！起手式！起手式！</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="o">*</span><span class="p">{</span><span class="k">margin</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span><span class="k">padding</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span><span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span><span class="p">}</span>
+</code></pre></div><ol start="6">
+<li>一定要动手调试每一个属性</li>
+</ol>
+<!-- raw HTML omitted -->
+]]></content>
+		</item>
+		
+		<item>
+			<title>浅析URL</title>
+			<link>https://wuchuan.monster/posts/%E6%B5%85%E6%9E%90-url/</link>
+			<pubDate>Sat, 28 Dec 2019 13:12:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/%E6%B5%85%E6%9E%90-url/</guid>
+			<description>一. URL 有哪几部分？ URL 包括 &amp;ldquo;协议+域名或 IP+端口号+路径+查询字符串+锚点&amp;rdquo; http：//或 https：//
+&amp;ldquo;http&amp;quot;代表超文本传输 ​​ 协议。让浏览器知道它将使用哪种协议来访问 domain 中指定的信息。“ https”协议是“超文本传输 ​​ 协议安全”的缩写，表示通过 HTTP 传输的信息已加密且安全。在 http 或 https 之后是冒号（：）和两个正斜杠（//），用于将协议与 URL 的其余部分分隔开。
+www
+接下来，“ www”代表万维网，用于区分内容。URL 的这一部分不是必需的，可以省去很多次。例如，键入“ http://computerhope.com ”仍然可以将您带到 Computer Hope 网站。地址的这一部分也可以代替重要的子页面，称为 subdomain。
+computerhope.com
+接下来，“ computerhope.com”是网站的域名。域的最后一部分称为域后缀，即 TLD。它用于标识网站的类型或位置。例如，“。com”是商业名称的缩写，“。org”是组织的缩写，“。co.uk”是英国。还有许多其他域后缀可用。要获取域名，您可以通过域名注册商注册名称。
+/jargon/u/ 接下来的“行话”和上述网址的“U”形部分是目录在网页所在的服务器上。在此示例中，网页有两个目录，因此，如果您尝试在服务器上查找文件，则该文件将位于/public_html/jargon/u 目录中。对于大多数服务器，public_html 目录是包含 HTML 文件的默认目录。
+url.htm
+最后，url.htm 是您正在查看的域上的实际网页。尾随的.htm 是网页的文件扩展名，指示该文件是 HTML 文件。Internet 上的其他常见文件扩展名包括.html，.php，.asp，.cgi，.xml，.jpg 和.gif。这些文件扩展名中的每一个都执行不同的功能，就像计算机上所有不同类型的文件一样。
+二. DNS 的作用是什么，nslookup 命令怎么用 DNS
+域名系统（DNS）是 Internet 的电话簿。人们通过域名（例如 nytimes.com 或 espn.com）在线访问信息。Web 浏览器通过 Internet 协议（IP）地址进行交互。DNS 将域名转换为 IP 地址，以便浏览器可以加载 Internet 资源。</description>
+			<content type="html"><![CDATA[<h4 id="-url-">一. URL 有哪几部分？</h4>
+<p>URL 包括 &ldquo;协议+域名或 IP+端口号+路径+查询字符串+锚点&rdquo;
+<img src="/images/url.gif" alt="URL"></p>
+<p><strong>http：//或 https：//</strong></p>
+<p>&ldquo;http&quot;代表超文本传输 ​​ 协议。让浏览器知道它将使用哪种协议来访问 domain 中指定的信息。“ https”协议是“超文本传输 ​​ 协议安全”的缩写，表示通过 HTTP 传输的信息已加密且安全。在 http 或 https 之后是冒号（：）和两个正斜杠（//），用于将协议与 URL 的其余部分分隔开。</p>
+<p><strong>www</strong></p>
+<p>接下来，“ www”代表万维网，用于区分内容。URL 的这一部分不是必需的，可以省去很多次。例如，键入“ <a href="http://computerhope.com">http://computerhope.com</a> ”仍然可以将您带到 Computer Hope 网站。地址的这一部分也可以代替重要的子页面，称为 subdomain。</p>
+<p><strong>computerhope.com</strong></p>
+<p>接下来，“ computerhope.com”是网站的域名。域的最后一部分称为域后缀，即 TLD。它用于标识网站的类型或位置。例如，“。com”是商业名称的缩写，“。org”是组织的缩写，“。co.uk”是英国。还有许多其他域后缀可用。要获取域名，您可以通过域名注册商注册名称。</p>
+<p><strong>/jargon/u/</strong>
+接下来的“行话”和上述网址的“U”形部分是目录在网页所在的服务器上。在此示例中，网页有两个目录，因此，如果您尝试在服务器上查找文件，则该文件将位于/public_html/jargon/u 目录中。对于大多数服务器，public_html 目录是包含 HTML 文件的默认目录。</p>
+<p><strong>url.htm</strong></p>
+<p>最后，url.htm 是您正在查看的域上的实际网页。尾随的.htm 是网页的文件扩展名，指示该文件是 HTML 文件。Internet 上的其他常见文件扩展名包括.html，.php，.asp，.cgi，.xml，.jpg 和.gif。这些文件扩展名中的每一个都执行不同的功能，就像计算机上所有不同类型的文件一样。</p>
+<h4 id="-dns-nslookup-">二. DNS 的作用是什么，nslookup 命令怎么用</h4>
+<p><strong>DNS</strong></p>
+<p>域名系统（DNS）是 Internet 的电话簿。人们通过域名（例如 nytimes.com 或 espn.com）在线访问信息。Web 浏览器通过 Internet 协议（IP）地址进行交互。DNS 将域名转换为 IP 地址，以便浏览器可以加载 Internet 资源。</p>
+<p>连接到 Internet 的每个设备都有一个唯一的 IP 地址，其他计算机可使用该 IP 地址查找该设备。DNS 服务器消除了人们存储 IP 地址（例如 192.168.1.1（在 IPv4 中））或更复杂的较新的字母数字 IP 地址（例如 2400：cb00：2048：1 :: c629：d7a2（在 IPv6 中））的需要。</p>
+<p><strong>nslookup 命令</strong></p>
+<p>Nslookup –它是一个功能强大的网络管理命令行工具，用于查询域名系统（DNS）以获取域名或 IP 地址，映射或其他任何特定的 DNS 记录。</p>
+<p><strong>主要用于:</strong></p>
+<ul>
+<li>查找主机的 IP 地址。</li>
+<li>查找 IP 地址的域名。</li>
+<li>查找域的邮件服务器。
+<img src="/images/nslookup%E5%91%BD%E4%BB%A4.png" alt="URL"></li>
+</ul>
+<h4 id="-ip-ping-">三. IP 的作用是什么，ping 命令怎么用</h4>
+<p><strong>IP (Internet Protocol)</strong> 地址是网络硬件的地址。它有助于将计算机连接到网络上以及全球的其他设备。IP 地址由数字或字符组成。
+<strong>Ping 命令</strong>
+<img src="/images/ping.png" alt="URL"></p>
+<p><strong>ping</strong>命令通常用作验证计算机通过网络与另一台计算机或网络设备通信的简单方法。</p>
+<h4 id="-">四. 域名是什么，分别哪几类域名</h4>
+<ol>
+<li>域名可以说是一个 IP 地址的代称，目的是为了便于记忆后者。(qq.com,baidu.com 就是域名)</li>
+<li>域名主要有三类：
+<ul>
+<li>一级域名</li>
+<li>二级域名</li>
+<li>三级域名</li>
+</ul>
+</li>
+</ol>
+<p>例如：</p>
+<p><a href="http://www.xiedaimala.com">www.xiedaimala.com</a> 是二级域名(俗称一级域名)</p>
+<p>xiedaimala.com 是三级域名(俗称二级域名)</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>HTML5常用标签</title>
+			<link>https://wuchuan.monster/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+			<pubDate>Sat, 28 Dec 2019 10:12:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+			<description>一. a 标签的用法   他的作用：
+ 跳转外部页面 跳转内部锚点 跳转到邮箱或电话等    他的属于有:
+href:
+ 取值：  网址例如：  https://qq.com http://qq.com //qq.com(推荐这种)   路径例如：  /a/b/c a/b/c index.html 或者 ./index.html   伪协议：  javascript：代码； maito:邮箱 tel:手机号   id：  href=#xxx；      target:
+ 取值： 内置名字：  _blank _top _parent _self   程序员命名：  window 的 name iframe 的 name    download:</description>
+			<content type="html"><![CDATA[<h3 id="-a-">一. a 标签的用法</h3>
+<ol>
+<li>
+<p>他的作用：</p>
+<ul>
+<li>跳转外部页面</li>
+<li>跳转内部锚点</li>
+<li>跳转到邮箱或电话等</li>
+</ul>
+</li>
+<li>
+<p>他的属于有:</p>
+<p>href:</p>
+<ul>
+<li>取值：
+<ul>
+<li>网址例如：
+<ul>
+<li><a href="https://qq.com">https://qq.com</a></li>
+<li><a href="http://qq.com">http://qq.com</a></li>
+<li>//qq.com(推荐这种)</li>
+</ul>
+</li>
+<li>路径例如：
+<ul>
+<li>/a/b/c</li>
+<li>a/b/c</li>
+<li>index.html 或者 ./index.html</li>
+</ul>
+</li>
+<li>伪协议：
+<ul>
+<li>javascript：代码；</li>
+<li>maito:邮箱</li>
+<li>tel:手机号</li>
+</ul>
+</li>
+<li>id：
+<ul>
+<li>href=#xxx；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>target:</p>
+<ul>
+<li>取值：</li>
+<li>内置名字：
+<ul>
+<li>_blank</li>
+<li>_top</li>
+<li>_parent</li>
+<li>_self</li>
+</ul>
+</li>
+<li>程序员命名：
+<ul>
+<li>window 的 name</li>
+<li>iframe 的 name</li>
+</ul>
+</li>
+</ul>
+<p>download:</p>
+<p>作用：</p>
+<ul>
+<li>
+<p>不是打开页面，而是下载页面</p>
+</li>
+<li>
+<p>问题：</p>
+</li>
+<li>
+<p>不是所有浏览器都支持，尤其是手机浏览器可能不支持</p>
+</li>
+</ul>
+<p>rel = noopener:</p>
+<p>作用：</p>
+<ul>
+<li>是否新开一个页面</li>
+</ul>
+</li>
+</ol>
+<h3 id="-img-">二. img 标签的用法:</h3>
+<ol>
+<li>
+<p>他的作用：</p>
+<ul>
+<li>发出 get 请求，展示一张图片</li>
+</ul>
+</li>
+<li>
+<p>他的属于有:</p>
+<ul>
+<li>alt:属性包含一条对图像的文本描述，这不是强制性的，但对可访问性而言，它难以置信地有用——屏幕阅读器会将这些描述读给需要使用阅读器的使用者听，让他们知道图像的含义。</li>
+</ul>
+<ul>
+<li>
+<p>height:图片的高度</p>
+</li>
+<li>
+<p>width:图片的宽度</p>
+</li>
+<li>
+<p>src:属性是必须的，它包含了你想嵌入的图片的文件路径</p>
+</li>
+</ul>
+</li>
+<li>
+<p>支持事件:</p>
+<ul>
+<li>onload(加载)/onerror(加载失败)</li>
+</ul>
+</li>
+<li>
+<p>响应式:</p>
+<ul>
+<li>max-width:100%(可以自适应屏幕宽度)</li>
+</ul>
+</li>
+<li>
+<p>他是可替换元素</p>
+</li>
+</ol>
+<h3 id="-table-">三. table 标签的用法:</h3>
+<ol>
+<li>
+<p>相关的标签:</p>
+<ul>
+<li>table</li>
+<li>thead</li>
+<li>tbody</li>
+<li>tfoot</li>
+<li>tr</li>
+<li>td</li>
+<li>th</li>
+</ul>
+</li>
+</ol>
+<p>建立表格示例：</p>
+<pre><code class="language-html5" data-lang="html5">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;th&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;  //table必须与这几个元素搭配使用。
+</code></pre><ol>
+<li>相关的样式：</li>
+</ol>
+<p><strong>table-layout</strong>：CSS 属性定义了用于布局表格单元格，行和列的算法。</p>
+<p>table-layout 取值：</p>
+<ul>
+<li>auto(默认值):大多数浏览器采用自动表格布局算法对表格布局。表格及单元格的宽度取决于其包含的内容。</li>
+</ul>
+<ul>
+<li>fixed:表格和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。在当前列中，该单元格所在行之后的行并不会影响整个列宽。</li>
+</ul>
+<p><strong>border-collapse</strong>:是用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。在合并模式下，相邻单元格共享边框。</p>
+<p>border-collapse 取值：</p>
+<ul>
+<li>collapse:合并（collapsed ）模式下，表格中相邻单元格共享边框。在这种模式下，CSS 属性 border-style 的值 inset 表现为槽，值 outset 表现为脊。</li>
+</ul>
+<ul>
+<li>separate:分隔（separated）模式是 HTML 表格的传统模式。相邻单元格都拥有不同的边框。边框之间的距离是通过 CSS 属性 border-spacing 来确定的。</li>
+</ul>
+<p><strong>border-sapcing</strong>:属性指定相邻单元格边框之间的距离,初始值 &ldquo;0&rdquo;.</p>
+<h3 id="-">四. 个人感想:</h3>
+<ol>
+<li>HTML5 标签和属性一定要多用</li>
+<li>不懂的标签和属性 MDN 上查找</li>
+<li>标签要理解记忆，死记容易忘记</li>
+<li>前端工程师最大的忌讳是图片在网页上变形</li>
+</ol>
+]]></content>
+		</item>
+		
+		<item>
+			<title>HTML入门笔记1</title>
+			<link>https://wuchuan.monster/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+			<pubDate>Sat, 28 Dec 2019 09:12:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+			<description>一. HTML 是英国的李爵士发明的，他在 2017 年获得图灵奖； 二. HTML 起手式是 Emmet+! 三. 常用的表章节的标签有：  表示标题 h1 ~ h6 章节 section 文章 article 段落 p 头部 header 脚步 footer 主要内容 main 旁支内容 aside 划分 div  四. HTML 全局属性有：  class 它允许 CSS 和 Javascript 通过类选择器 (class selectors) 或 DOM 方(document.getElementsByClassName)来选择和访问特定的元素。 contenteditable 是一个枚举属性，表示元素是否可被用户编辑。 如果可以，浏览器会修改元素的部件以允许编辑。 hidden 是一个布尔属性，表示一个元素尚未或者不再相关。 id 定义了一个全文档唯一的标识符 (ID)。它用于在链接（使用片段）、脚本和样式（通过 CSS）中辨识元素。 style 包含文档的样式信息或者文档的部分内容。默认情况下，该标签的样式信息通常是 CSS 的格式。 tabindex 指示其元素是否可以聚焦，以及它是否/在何处参与顺序键盘导航（通常使用 Tab 键，因此得名）。 title 定义文档的标题，显示在浏览器的标题栏或标签页上。它只可以包含文本，若是包含有标签，则包含的任何标签都不会被解释。  五. 常用内容标签有:   ol + li 表示有序列表</description>
+			<content type="html"><![CDATA[<h3 id="-html--2017-">一. HTML 是英国的李爵士发明的，他在 2017 年获得图灵奖；</h3>
+<h3 id="-html--emmet">二. HTML 起手式是 Emmet+!</h3>
+<h3 id="-">三. 常用的表章节的标签有：</h3>
+<ol>
+<li>表示标题 h1 ~ h6</li>
+<li>章节 section</li>
+<li>文章 article</li>
+<li>段落 p</li>
+<li>头部 header</li>
+<li>脚步 footer</li>
+<li>主要内容 main</li>
+<li>旁支内容 aside</li>
+<li>划分 div</li>
+</ol>
+<h3 id="-html-">四. HTML 全局属性有：</h3>
+<ol>
+<li><strong>class</strong> 它允许 CSS 和 Javascript 通过类选择器 (class selectors) 或 DOM 方(document.getElementsByClassName)来选择和访问特定的元素。</li>
+<li><strong>contenteditable</strong> 是一个枚举属性，表示元素是否可被用户编辑。 如果可以，浏览器会修改元素的部件以允许编辑。</li>
+<li><strong>hidden</strong> 是一个布尔属性，表示一个元素尚未或者不再相关。</li>
+<li><strong>id</strong> 定义了一个全文档唯一的标识符 (ID)。它用于在链接（使用片段）、脚本和样式（通过 CSS）中辨识元素。</li>
+<li><strong>style</strong> 包含文档的样式信息或者文档的部分内容。默认情况下，该标签的样式信息通常是 CSS 的格式。</li>
+<li><strong>tabindex</strong> 指示其元素是否可以聚焦，以及它是否/在何处参与顺序键盘导航（通常使用 Tab 键，因此得名）。</li>
+<li><strong>title</strong> 定义文档的标题，显示在浏览器的标题栏或标签页上。它只可以包含文本，若是包含有标签，则包含的任何标签都不会被解释。</li>
+</ol>
+<h3 id="--1">五. 常用内容标签有:</h3>
+<ol>
+<li>
+<p><strong>ol + li</strong> 表示有序列表</p>
+</li>
+<li>
+<p><strong>ul + li</strong> 表示无序列表</p>
+<p>补充：ol 和 ul 必须和 li 搭配使用</p>
+</li>
+<li>
+<p>dl + dt + dd 定义列表</p>
+</li>
+</ol>
+<p>补充：dt 和 dd 必须和 ll 搭配使用,dl 主要用于定义清单列表</p>
+<ol start="4">
+<li><strong>pre</strong> 元素表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在 <!-- raw HTML omitted --> 开始标签后的换行符也会被省略)</li>
+<li><strong>hr</strong> 表示段落级元素之间的主题转换（例如，一个故事中的场景的改变，或一个章节的主题的改变）。在 HTML 的早期版本中，它是一个水平线。现在它仍能在可视化浏览器中表现为水平线，但目前被定义为语义上的，而不是表现层面上。</li>
+<li><strong>br</strong> 在文本中生成一个换行（回车）符号。此元素在写诗和地址时很有用，这些地方的换行都非常重要。</li>
+<li><strong>a</strong> 可以创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接。</li>
+<li><strong>em</strong> 标记出需要用户着重阅读的内容， <!-- raw HTML omitted --> 元素是可以嵌套的，嵌套层次越深，则其包含的内容被认定为越需要着重阅读。</li>
+<li><strong>strong</strong> 表示文本十分重要，一般用粗体显示。</li>
+<li><strong>code</strong> 呈现一段计算机代码. 默认情况下, 它以浏览器的默认等宽字体显示</li>
+<li><strong>q</strong> 表示一个封闭的并且是短的行内引用的文本. 这个标签是用来引用短的文本，所以请不要引入换行符; 对于长的文本的引用请使用 blockquote 替代.</li>
+<li><strong>blkockquote</strong> 代表其中的文字是引用内容。通常在渲染时，这部分的内容会有一定的缩进（注 中说明了如何更改）。若引文来源于网络，则可以将原内容的出处 URL 地址设置到 cite 特性上，若要以文本的形式告知读者引文的出处时，可以通过 <!-- raw HTML omitted --> 元素。</li>
+</ol>
+<h3 id="-html5-----html5--mdn">六. HTML5 不懂的标签 请搜索 标签名 + HTML5 + MDN</h3>
+]]></content>
+		</item>
 		
 		<item>
 			<title>如何使用hugo写博客</title>
-			<link>https://example.com/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%86%99%E5%8D%9A%E5%AE%A2/</link>
+			<link>https://wuchuan.monster/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%86%99%E5%8D%9A%E5%AE%A2/</link>
 			<pubDate>Thu, 26 Dec 2019 13:12:19 +0800</pubDate>
 			
-			<guid>https://example.com/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%86%99%E5%8D%9A%E5%AE%A2/</guid>
+			<guid>https://wuchuan.monster/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%86%99%E5%8D%9A%E5%AE%A2/</guid>
 			<description>环境搭建   你需要 FQ
   安装 VSCode
   安装 GIT
   安装 cmder
-   安装 hugo
+  安装 hugo
   hugo 官方安装教程
   注意检查本地 PATH 路径是否有 hugo 启动路径
   cmder 中输入下列代码检查是否安装成功
@@ -42,9 +965,6 @@
 <li>
 <p>安装 cmder</p>
 </li>
-</ol>
-<p><img src="/static/images/ping.png" alt="fdf"></p>
-<ol start="5">
 <li>
 <p>安装 hugo</p>
 </li>

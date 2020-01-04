@@ -14,15 +14,13 @@ draft: false
 
 4. 安装 cmder
 
-![fdf](/static/ping.png)
+5. 安装 hugo
 
-1. 安装 hugo
+6. [hugo 官方安装教程](https://gohugo.io/getting-started/installing)
 
-2. [hugo 官方安装教程](https://gohugo.io/getting-started/installing)
+7. 注意检查本地 PATH 路径是否有 hugo 启动路径
 
-3. 注意检查本地 PATH 路径是否有 hugo 启动路径
-
-4. cmder 中输入下列代码检查是否安装成功
+8. cmder 中输入下列代码检查是否安装成功
 
 ```
   hugo version
