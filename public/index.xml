@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-cn</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 01 Jan 2020 13:12:19 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2020 18:58:19 +0800</lastBuildDate>
     
 	<atom:link href="https://wuchuan.monster/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS 函数的执行时机</title>
+      <link>https://wuchuan.monster/posts/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
+      <pubDate>Sun, 05 Jan 2020 18:58:19 +0800</pubDate>
+      
+      <guid>https://wuchuan.monster/posts/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
+      <description>1. 解释为什么如下代码会打印 6 个 6 let i = 0for(i = 0; i&amp;lt;6; i++){setTimeout(()=&amp;gt;{console.log(i)},0)}答： 因为 setTimeout() 方法的意思是等一会打印出 i 的值，他要等循环先执行完，才会打印。循环执行完i===6，所以会打印6个6。
+ 就是for循环要先执行完6次，i变成了6； 然后 setTimeout() 方法在进入循环，打印6次；  2. 写出让上面代码打印 0、1、2、3、4、5 的方法 答： for(let i = 0; i&amp;lt;6; i++){setTimeout(()=&amp;gt;{console.log(i)},0)}3. 除了使用 for let 配合，还有什么其他方法可以打印出 0、1、2、3、4、5 答： let i = 0;while (i &amp;lt; 5) {i++;console.log(i)}</description>
+    </item>
     
     <item>
       <title>JavaSript的诞生</title>
