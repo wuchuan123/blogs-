@@ -7,10 +7,56 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-cn</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 05 Jan 2020 18:58:19 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2020 19:43:19 +0800</lastBuildDate>
     
 	<atom:link href="https://wuchuan.monster/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jQuery学习小结</title>
+      <link>https://wuchuan.monster/posts/jquery%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/</link>
+      <pubDate>Sun, 12 Jan 2020 19:43:19 +0800</pubDate>
+      
+      <guid>https://wuchuan.monster/posts/jquery%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/</guid>
+      <description>1. jQuery 如何获取元素 jQuery的基本设计思想和主要用法，就是&amp;quot;选择某个网页元素，然后对其进行某种操作&amp;rdquo;。这是它区别于其他Javascript库的根本特点。
+使用jQuery的第一步，往往就是将一个选择表达式，放进构造函数jQuery()（简写为$），然后得到被选中的元素。
+选择表达式可以是CSS选择器：
+$(document) //选择整个文档对象$(&amp;#39;#myId&amp;#39;) //选择ID为myId的网页元素$(&amp;#39;div.myClass&amp;#39;) // 选择class为myClass的div元素$(&amp;#39;input[name=first]&amp;#39;) // 选择name属性等于first的input元素也可以是jQuery特有的表达式：
+$(&amp;#39;a:first&amp;#39;) //选择网页中第一个a元素$(&amp;#39;tr:odd&amp;#39;) //选择表格的奇数行$(&amp;#39;#myForm :input&amp;#39;) // 选择表单中的input元素$(&amp;#39;div:visible&amp;#39;) //选择可见的div元素$(&amp;#39;div:gt(2)&amp;#39;) // 选择所有的div元素，除了前三个$(&amp;#39;div:animated&amp;#39;) // 选择当前处于动画状态的div元素2. jQuery 的链式操作是怎样的 jQuery的链式操作，就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：
+$(&amp;#39;div&amp;#39;).find(&amp;#39;h3&amp;#39;).eq(2).html(&amp;#39;Hello&amp;#39;);分解开来，就是下面这样：
+$(&amp;#39;div&amp;#39;) //找到div元素.find(&amp;#39;h3&amp;#39;) //选择其中的h3元素.eq(2) //选择第3个h3元素.html(&amp;#39;Hello&amp;#39;); //将它的内容改为Hello这是jQuery最令人称道、最方便的特点。它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。
+jQuery还提供了.end()方法，使得结果集可以后退一步：
+$(&amp;#39;div&amp;#39;).find(&amp;#39;h3&amp;#39;).eq(2).html(&amp;#39;Hello&amp;#39;).end() //退回到选中所有的h3元素的那一步.eq(0) //选中第一个h3元素.</description>
+    </item>
+    
+    <item>
+      <title>new、call、apply、bine函数的实现</title>
+      <link>https://wuchuan.monster/posts/js%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</link>
+      <pubDate>Sun, 12 Jan 2020 17:43:19 +0800</pubDate>
+      
+      <guid>https://wuchuan.monster/posts/js%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</guid>
+      <description>原型,共有属性： 修改共有属性 obj.proto.toString=&#39;xxx&amp;rsquo; //不推荐 Object.prototype.toString=&#39;xxx&amp;rsquo; 修改原型 obj.__proto__=common let obj = Object.create(common)</description>
+    </item>
+    
+    <item>
+      <title>new、call、apply、bine函数的实现</title>
+      <link>https://wuchuan.monster/posts/newcallapplybine%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Sat, 11 Jan 2020 17:43:19 +0800</pubDate>
+      
+      <guid>https://wuchuan.monster/posts/newcallapplybine%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <description>new new 运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象类型之一</description>
+    </item>
+    
+    <item>
+      <title>JavaScript this </title>
+      <link>https://wuchuan.monster/posts/this/</link>
+      <pubDate>Sat, 11 Jan 2020 13:12:19 +0800</pubDate>
+      
+      <guid>https://wuchuan.monster/posts/this/</guid>
+      <description>1. 之前我们说过 this 是在运行时进行绑定的， 并不是在编写时绑定， 它的上下文取决于函数调 用时的各种条件。 this 的绑定和函数声明的位置没有任何关系， 只取决于函数的调用方式。
+2. 当一个函数被调用时， 会创建一个活动记录（有时候也称为执行上下文）。 这个记录会包 含函数在哪里被调用（调用栈）、 函数的调用方法、 传入的参数等信息。 this 就是记录的 其中一个属性， 会在函数执行的过程中用到。
+3. 默认绑定 =&amp;gt; 绑定全局 function foo() {console.log( this.a );}var a = 2;foo(); // 24. 显示绑定（call,apply,bind)  硬绑定  function foo() {console.log(this.a);}var obj = {a: 2};var bar = function() {foo.call(obj);};bar(); // 2setTimeout(bar, 100); // 2// 硬绑定的 bar 不可能再修改它的 thisbar.</description>
+    </item>
     
     <item>
       <title>JS 函数的执行时机</title>
@@ -98,49 +144,6 @@ url.htm
 最后，url.htm 是您正在查看的域上的实际网页。尾随的.htm 是网页的文件扩展名，指示该文件是 HTML 文件。Internet 上的其他常见文件扩展名包括.html，.php，.asp，.cgi，.xml，.jpg 和.gif。这些文件扩展名中的每一个都执行不同的功能，就像计算机上所有不同类型的文件一样。
 二. DNS 的作用是什么，nslookup 命令怎么用 DNS
 域名系统（DNS）是 Internet 的电话簿。人们通过域名（例如 nytimes.com 或 espn.com）在线访问信息。Web 浏览器通过 Internet 协议（IP）地址进行交互。DNS 将域名转换为 IP 地址，以便浏览器可以加载 Internet 资源。</description>
-    </item>
-    
-    <item>
-      <title>HTML5常用标签</title>
-      <link>https://wuchuan.monster/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
-      <pubDate>Sat, 28 Dec 2019 10:12:19 +0800</pubDate>
-      
-      <guid>https://wuchuan.monster/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
-      <description>一. a 标签的用法   他的作用：
- 跳转外部页面 跳转内部锚点 跳转到邮箱或电话等    他的属于有:
-href:
- 取值：  网址例如：  https://qq.com http://qq.com //qq.com(推荐这种)   路径例如：  /a/b/c a/b/c index.html 或者 ./index.html   伪协议：  javascript：代码； maito:邮箱 tel:手机号   id：  href=#xxx；      target:
- 取值： 内置名字：  _blank _top _parent _self   程序员命名：  window 的 name iframe 的 name    download:</description>
-    </item>
-    
-    <item>
-      <title>HTML入门笔记1</title>
-      <link>https://wuchuan.monster/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
-      <pubDate>Sat, 28 Dec 2019 09:12:19 +0800</pubDate>
-      
-      <guid>https://wuchuan.monster/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
-      <description>一. HTML 是英国的李爵士发明的，他在 2017 年获得图灵奖； 二. HTML 起手式是 Emmet+! 三. 常用的表章节的标签有：  表示标题 h1 ~ h6 章节 section 文章 article 段落 p 头部 header 脚步 footer 主要内容 main 旁支内容 aside 划分 div  四. HTML 全局属性有：  class 它允许 CSS 和 Javascript 通过类选择器 (class selectors) 或 DOM 方(document.getElementsByClassName)来选择和访问特定的元素。 contenteditable 是一个枚举属性，表示元素是否可被用户编辑。 如果可以，浏览器会修改元素的部件以允许编辑。 hidden 是一个布尔属性，表示一个元素尚未或者不再相关。 id 定义了一个全文档唯一的标识符 (ID)。它用于在链接（使用片段）、脚本和样式（通过 CSS）中辨识元素。 style 包含文档的样式信息或者文档的部分内容。默认情况下，该标签的样式信息通常是 CSS 的格式。 tabindex 指示其元素是否可以聚焦，以及它是否/在何处参与顺序键盘导航（通常使用 Tab 键，因此得名）。 title 定义文档的标题，显示在浏览器的标题栏或标签页上。它只可以包含文本，若是包含有标签，则包含的任何标签都不会被解释。  五. 常用内容标签有:   ol + li 表示有序列表</description>
-    </item>
-    
-    <item>
-      <title>如何使用hugo写博客</title>
-      <link>https://wuchuan.monster/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%86%99%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Thu, 26 Dec 2019 13:12:19 +0800</pubDate>
-      
-      <guid>https://wuchuan.monster/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%86%99%E5%8D%9A%E5%AE%A2/</guid>
-      <description>环境搭建   你需要 FQ
-  安装 VSCode
-  安装 GIT
-  安装 cmder
-  安装 hugo
-  hugo 官方安装教程
-  注意检查本地 PATH 路径是否有 hugo 启动路径
-  cmder 中输入下列代码检查是否安装成功
-   hugo version hugo 快速开始   hugo 官网
-  点击 Quick Start
-  按官方教程一步步做
-  注意事项：   步骤 2 quickstart 文件夹命名更改格式: 你的 github 用户名.github.io-xxx
-  步骤 3 可以更改博客主题，新手不建议更改</description>
     </item>
     
   </channel>

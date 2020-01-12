@@ -149,3 +149,4 @@ border-collapse 取值：
 2. 不懂的标签和属性 MDN 上查找
 3. 标签要理解记忆，死记容易忘记
 4. 前端工程师最大的忌讳是图片在网页上变形
+5. 手机浏览<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">

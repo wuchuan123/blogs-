@@ -6,8 +6,308 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>zn-cn</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 05 Jan 2020 18:58:19 +0800</lastBuildDate>
+		<lastBuildDate>Sun, 12 Jan 2020 19:43:19 +0800</lastBuildDate>
 		<atom:link href="https://wuchuan.monster/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>jQuery学习小结</title>
+			<link>https://wuchuan.monster/posts/jquery%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/</link>
+			<pubDate>Sun, 12 Jan 2020 19:43:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/jquery%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/</guid>
+			<description>1. jQuery 如何获取元素 jQuery的基本设计思想和主要用法，就是&amp;quot;选择某个网页元素，然后对其进行某种操作&amp;rdquo;。这是它区别于其他Javascript库的根本特点。
+使用jQuery的第一步，往往就是将一个选择表达式，放进构造函数jQuery()（简写为$），然后得到被选中的元素。
+选择表达式可以是CSS选择器：
+$(document) //选择整个文档对象$(&amp;#39;#myId&amp;#39;) //选择ID为myId的网页元素$(&amp;#39;div.myClass&amp;#39;) // 选择class为myClass的div元素$(&amp;#39;input[name=first]&amp;#39;) // 选择name属性等于first的input元素也可以是jQuery特有的表达式：
+$(&amp;#39;a:first&amp;#39;) //选择网页中第一个a元素$(&amp;#39;tr:odd&amp;#39;) //选择表格的奇数行$(&amp;#39;#myForm :input&amp;#39;) // 选择表单中的input元素$(&amp;#39;div:visible&amp;#39;) //选择可见的div元素$(&amp;#39;div:gt(2)&amp;#39;) // 选择所有的div元素，除了前三个$(&amp;#39;div:animated&amp;#39;) // 选择当前处于动画状态的div元素2. jQuery 的链式操作是怎样的 jQuery的链式操作，就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：
+$(&amp;#39;div&amp;#39;).find(&amp;#39;h3&amp;#39;).eq(2).html(&amp;#39;Hello&amp;#39;);分解开来，就是下面这样：
+$(&amp;#39;div&amp;#39;) //找到div元素.find(&amp;#39;h3&amp;#39;) //选择其中的h3元素.eq(2) //选择第3个h3元素.html(&amp;#39;Hello&amp;#39;); //将它的内容改为Hello这是jQuery最令人称道、最方便的特点。它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。
+jQuery还提供了.end()方法，使得结果集可以后退一步：
+$(&amp;#39;div&amp;#39;).find(&amp;#39;h3&amp;#39;).eq(2).html(&amp;#39;Hello&amp;#39;).end() //退回到选中所有的h3元素的那一步.eq(0) //选中第一个h3元素.</description>
+			<content type="html"><![CDATA[<h3 id="1-jquery-">1. jQuery 如何获取元素</h3>
+<p>jQuery的基本设计思想和主要用法，就是&quot;选择某个网页元素，然后对其进行某种操作&rdquo;。这是它区别于其他Javascript库的根本特点。</p>
+<p>使用jQuery的第一步，往往就是将一个选择表达式，放进构造函数jQuery()（简写为$），然后得到被选中的元素。</p>
+<p>选择表达式可以是CSS选择器：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">)</span> <span class="c1">//选择整个文档对象
+</span><span class="c1"></span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myId&#39;</span><span class="p">)</span> <span class="c1">//选择ID为myId的网页元素
+</span><span class="c1"></span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.myClass&#39;</span><span class="p">)</span> <span class="c1">// 选择class为myClass的div元素
+</span><span class="c1"></span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;input[name=first]&#39;</span><span class="p">)</span> <span class="c1">// 选择name属性等于first的input元素
+</span></code></pre></div><p>也可以是jQuery特有的表达式：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a:first&#39;</span><span class="p">)</span> <span class="c1">//选择网页中第一个a元素
+</span><span class="c1"></span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;tr:odd&#39;</span><span class="p">)</span> <span class="c1">//选择表格的奇数行
+</span><span class="c1"></span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myForm :input&#39;</span><span class="p">)</span> <span class="c1">// 选择表单中的input元素
+</span><span class="c1"></span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div:visible&#39;</span><span class="p">)</span> <span class="c1">//选择可见的div元素
+</span><span class="c1"></span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div:gt(2)&#39;</span><span class="p">)</span> <span class="c1">// 选择所有的div元素，除了前三个
+</span><span class="c1"></span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div:animated&#39;</span><span class="p">)</span> <span class="c1">// 选择当前处于动画状态的div元素
+</span></code></pre></div><h3 id="2-jquery-">2. jQuery 的链式操作是怎样的</h3>
+<p>jQuery的链式操作，就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来，比如：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">eq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span><span class="p">;</span>
+</code></pre></div><p>分解开来，就是下面这样：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span> <span class="c1">//找到div元素
+</span><span class="c1"></span>
+<span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">)</span> <span class="c1">//选择其中的h3元素
+</span><span class="c1"></span>
+<span class="p">.</span><span class="nx">eq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">//选择第3个h3元素
+</span><span class="c1"></span>
+<span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//将它的内容改为Hello
+</span></code></pre></div><p>这是jQuery最令人称道、最方便的特点。它的原理在于每一步的jQuery操作，返回的都是一个jQuery对象，所以不同操作可以连在一起。</p>
+<p>jQuery还提供了.end()方法，使得结果集可以后退一步：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span>
+
+<span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">)</span>
+
+<span class="p">.</span><span class="nx">eq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+
+<span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="p">)</span> <span class="c1">//退回到选中所有的h3元素的那一步
+</span><span class="c1"></span>
+<span class="p">.</span><span class="nx">eq</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1">//选中第一个h3元素
+</span><span class="c1"></span>
+<span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;World&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//将它的内容改为World
+</span></code></pre></div><h3 id="3-jquery-">3. jQuery 如何创建元素</h3>
+<p>创建新元素的方法非常简单，只要把新元素直接传入jQuery的构造函数就行了：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;p&gt;Hello&lt;/p&gt;&#39;</span><span class="p">)</span><span class="p">;</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;li class=&#34;new&#34;&gt;new list item&lt;/li&gt;&#39;</span><span class="p">)</span><span class="p">;</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;li&gt;list item&lt;/li&gt;&#39;</span><span class="p">)</span><span class="p">;</span>
+</code></pre></div><h3 id="4-jquery-">4. jQuery 如何移动元素</h3>
+<p>jQuery移动元素，就是提供两组方法，来操作元素在网页中的位置移动。一组方法是直接移动该元素，另一组方法是移动其他元素，使得目标元素达到我们想要的位置。</p>
+<p>假定我们选中了一个div元素，需要把它移动到p元素后面。</p>
+<p>第一种方法是使用.insertAfter()，把div元素移动p元素后面：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">insertAfter</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+</code></pre></div><p>第二种方法是使用.after()，把p元素加到div元素前面：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">after</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+</code></pre></div><p>表面上看，这两种方法的效果是一样的，唯一的不同似乎只是操作视角的不同。但是实际上，它们有一个重大差别，那就是返回的元素不一样。第一种方法返回div元素，第二种方法返回p元素。你可以根据需要，选择到底使用哪一种方法。</p>
+<p>使用这种模式的操作方法，一共有四对：</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">.</span><span class="nx">insertAfter</span><span class="p">(</span><span class="p">)</span><span class="nx">和</span><span class="p">.</span><span class="nx">after</span><span class="p">(</span><span class="p">)</span><span class="err">：</span><span class="nx">在现存元素的外部</span><span class="err">，</span><span class="nx">从后面插入元素</span>
+
+<span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="p">)</span><span class="nx">和</span><span class="p">.</span><span class="nx">before</span><span class="p">(</span><span class="p">)</span><span class="err">：</span><span class="nx">在现存元素的外部</span><span class="err">，</span><span class="nx">从前面插入元素</span>
+
+<span class="p">.</span><span class="nx">appendTo</span><span class="p">(</span><span class="p">)</span><span class="nx">和</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="p">)</span><span class="err">：</span><span class="nx">在现存元素的内部</span><span class="err">，</span><span class="nx">从后面插入元素</span>
+
+<span class="p">.</span><span class="nx">prependTo</span><span class="p">(</span><span class="p">)</span><span class="nx">和</span><span class="p">.</span><span class="nx">prepend</span><span class="p">(</span><span class="p">)</span><span class="err">：</span><span class="nx">在现存元素的内部</span><span class="err">，</span><span class="nx">从前面插入元素</span>
+</code></pre></div><h3 id="5-jquery-">5. jQuery 如何修改元素的属性</h3>
+<ul>
+<li>.addClass() 为每个匹配的元素添加指定的样式类名</li>
+<li>.attr()  获取匹配的元素集合中的第一个元素的属性的值。设置每一个匹配元素的一个或多个属性。</li>
+<li>.hasClass()
+确定任何一个匹配元素是否有被分配给定的（样式）类。</li>
+<li>DOM 属性 | DOM 操作 &gt; DOM 插入现有元素内
+.html()
+获取集合中第一个匹配元素的HTML内容 设置每一个匹配元素的html内容。</li>
+<li>.prop()
+获取匹配的元素集中第一个元素的属性（property）值为匹配的元素设置一个或多个属性（properties）。</li>
+<li>.removeAttr()
+为匹配的元素集合中的每个元素中移除一个属性（attribute）。</li>
+<li>.removeClass()
+移除集合中每个匹配元素上一个，多个或全部样式。</li>
+<li>.removeProp()
+为集合中匹配的元素删除一个属性（property）。</li>
+<li>.toggleClass()
+在匹配的元素集合中的每个元素上添加或删除一个或多个样式类,取决于这个样式类是否存在或值切换属性。即：如果存在（不存在）就删除（添加）一个类。</li>
+<li>.val()
+获取匹配的元素集合中第一个元素的当前值。设置匹配的元素集合中每个元素的值。</li>
+</ul>
+<p>参考链接：</p>
+<p><a href="http://www.ruanyifeng.com/blog/2011/07/jquery_fundamentals.html">阮一峰的jQuery设计思想</a></p>
+<p><a href="https://www.jquery123.com/category/attributes/">jQuery中文帮助文档</a></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>new、call、apply、bine函数的实现</title>
+			<link>https://wuchuan.monster/posts/js%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</link>
+			<pubDate>Sun, 12 Jan 2020 17:43:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/js%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</guid>
+			<description>原型,共有属性： 修改共有属性 obj.proto.toString=&#39;xxx&amp;rsquo; //不推荐 Object.prototype.toString=&#39;xxx&amp;rsquo; 修改原型 obj.__proto__=common let obj = Object.create(common)</description>
+			<content type="html"><![CDATA[<p>原型,共有属性：
+修改共有属性
+obj.<strong>proto</strong>.toString='xxx&rsquo; //不推荐
+Object.prototype.toString='xxx&rsquo;
+修改原型
+obj.__proto__=common
+let obj = Object.create(common)</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>new、call、apply、bine函数的实现</title>
+			<link>https://wuchuan.monster/posts/newcallapplybine%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+			<pubDate>Sat, 11 Jan 2020 17:43:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/newcallapplybine%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+			<description>new new 运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象类型之一</description>
+			<content type="html"><![CDATA[<h2 id="new">new</h2>
+<p>new 运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象类型之一</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>JavaScript this </title>
+			<link>https://wuchuan.monster/posts/this/</link>
+			<pubDate>Sat, 11 Jan 2020 13:12:19 +0800</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/this/</guid>
+			<description>1. 之前我们说过 this 是在运行时进行绑定的， 并不是在编写时绑定， 它的上下文取决于函数调 用时的各种条件。 this 的绑定和函数声明的位置没有任何关系， 只取决于函数的调用方式。
+2. 当一个函数被调用时， 会创建一个活动记录（有时候也称为执行上下文）。 这个记录会包 含函数在哪里被调用（调用栈）、 函数的调用方法、 传入的参数等信息。 this 就是记录的 其中一个属性， 会在函数执行的过程中用到。
+3. 默认绑定 =&amp;gt; 绑定全局 function foo() {console.log( this.a );}var a = 2;foo(); // 24. 显示绑定（call,apply,bind)  硬绑定  function foo() {console.log(this.a);}var obj = {a: 2};var bar = function() {foo.call(obj);};bar(); // 2setTimeout(bar, 100); // 2// 硬绑定的 bar 不可能再修改它的 thisbar.</description>
+			<content type="html"><![CDATA[<h4 id="1--this---">1. 之前我们说过 this 是在运行时进行绑定的， 并不是在编写时绑定， 它的上下文取决于函数调</h4>
+<p>用时的各种条件。 this 的绑定和函数声明的位置没有任何关系， 只取决于函数的调用方式。</p>
+<h4 id="2---">2. 当一个函数被调用时， 会创建一个活动记录（有时候也称为执行上下文）。 这个记录会包</h4>
+<p>含函数在哪里被调用（调用栈）、 函数的调用方法、 传入的参数等信息。 this 就是记录的
+其中一个属性， 会在函数执行的过程中用到。</p>
+<h4 id="3---">3. 默认绑定 =&gt; 绑定全局</h4>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="k">this</span><span class="p">.</span><span class="nx">a</span> <span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">foo</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">// 2
+</span></code></pre></div><h4 id="4-callapplybind">4. 显示绑定（call,apply,bind)</h4>
+<ol>
+<li>硬绑定</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">a</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">a</span><span class="o">:</span> <span class="mi">2</span>
+<span class="p">}</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">bar</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">foo</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span><span class="p">;</span>
+
+<span class="nx">bar</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">// 2
+</span><span class="c1"></span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="nx">bar</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span><span class="p">;</span> <span class="c1">// 2
+</span><span class="c1"></span>
+<span class="c1">// 硬绑定的 bar 不可能再修改它的 this
+</span><span class="c1"></span><span class="nx">bar</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nb">window</span><span class="p">)</span><span class="p">;</span> <span class="c1">// 2
+</span></code></pre></div><p>我们来看看这个变种到底是怎样工作的。 我们创建了函数 bar()， 并在它的内部手动调用
+了 foo.call(obj)， 因此强制把 foo 的 this 绑定到了 obj。 无论之后如何调用函数 bar， 它总会手动在 obj 上调用 foo。 这种绑定是一种显式的强制绑定， 因此我们称之为硬绑定。</p>
+<h4 id="2-api">2. API调用的“上下文”</h4>
+<h4 id="5----this-----this--">5. 隐式绑定 =&gt;当函数引用有上下文对象时， 隐式绑定规则会把函数调用中的 this 绑定到这个上下文对象。对象属性引用链中只有最顶层或者说最后一层会影响调用位置。在分析隐式绑定时， 我们必须在一个对象内部包含一个指向函数的属性， 并通过这个属性间接引用函数， 从而把 this 间接（隐式） 绑定到这个对象上。</h4>
+<div class="highlight"><pre class="chroma"><code class="language-javaScript" data-lang="javaScript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">a</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">a</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">foo</span><span class="o">:</span> <span class="nx">foo</span>
+<span class="p">}</span><span class="p">;</span>
+
+<span class="nx">obj</span><span class="p">.</span><span class="nx">foo</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">// 2
+</span></code></pre></div><ul>
+<li>隐式丢失，一个最常见的 this 绑定问题就是被隐式绑定的函数会丢失绑定对象， 也就是说它会应用默认绑定， 从而把 this 绑定到全局对象或者 undefined 上， 取决于是否是严格模式。</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-javaScript" data-lang="javaScript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">a</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">a</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">foo</span><span class="o">:</span> <span class="nx">foo</span>
+<span class="p">}</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">bar</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">foo</span><span class="p">;</span> <span class="c1">// 函数别名！
+</span><span class="c1"></span>
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s2">&#34;oops, global&#34;</span><span class="p">;</span> <span class="c1">// a 是全局对象的属性
+</span><span class="c1"></span>
+<span class="nx">bar</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">// &#34;oops, global&#34;&#34;
+</span></code></pre></div><ul>
+<li>回调函数</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-javaScript" data-lang="javaScript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">a</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">doFoo</span><span class="p">(</span><span class="nx">fn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// fn 其实引用的是 foo
+</span><span class="c1"></span>  <span class="nx">fn</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">// &lt;-- 调用位置！
+</span><span class="c1"></span><span class="p">}</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">a</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">foo</span><span class="o">:</span> <span class="nx">foo</span>
+<span class="p">}</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s2">&#34;oops, global&#34;</span><span class="p">;</span> <span class="c1">// a 是全局对象的属性
+</span><span class="c1"></span><span class="nx">doFoo</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">foo</span><span class="p">)</span><span class="p">;</span> <span class="c1">// &#34;oops, global&#34;
+</span></code></pre></div><h4 id="6-new">6. new绑定</h4>
+<p>首先我们重新定义一下 JavaScript 中的“构造函数”。 在 JavaScript 中， 构造函数只是一些使用 new 操作符时被调用的函数。 它们并不会属于某个类， 也不会实例化一个类。 实际上，它们甚至都不能说是一种特殊的函数类型， 它们只是被 new 操作符调用的普通函数而已。</p>
+<p>实际上并不存在所谓的“构造函数”， 只有对于函数的“构造调用”。</p>
+<h4 id="7-">7. 优先级</h4>
+<pre><code>显式&gt;new&gt;隐式&gt;默认
+</code></pre>
+<h3 id="heading">特殊引用</h3>
+<h4 id="1-">1. 软绑定</h4>
+<p>之前我们已经看到过， 硬绑定这种方式可以把 this 强制绑定到指定的对象（除了使用 new
+时）， 防止函数调用应用默认绑定规则。 问题在于， 硬绑定会大大降低函数的灵活性， 使
+用硬绑定之后就无法使用隐式绑定或者显式绑定来修改 this。
+如果可以给默认绑定指定一个全局对象和 undefined 以外的值， 那就可以实现和硬绑定相
+同的效果， 同时保留隐式绑定或者显式绑定修改 this 的能力。</p>
+<div class="highlight"><pre class="chroma"><code class="language-javaScript" data-lang="javaScript"><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">softBind</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">softBind</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="c1">// 捕获所有 curried 参数
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">curried</span> <span class="o">=</span> <span class="p">[</span><span class="p">]</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">bound</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">fn</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span>
+        <span class="p">(</span><span class="o">!</span><span class="k">this</span> <span class="o">||</span> <span class="k">this</span> <span class="o">===</span> <span class="p">(</span><span class="nb">window</span> <span class="o">||</span> <span class="nx">global</span><span class="p">)</span><span class="p">)</span> <span class="o">?</span>
+        <span class="nx">obj</span> <span class="o">:</span> <span class="k">this</span> <span class="nx">curried</span><span class="p">.</span><span class="nx">concat</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">curried</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">)</span>
+      <span class="p">)</span><span class="p">;</span>
+    <span class="p">}</span><span class="p">;</span>
+    <span class="nx">bound</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">fn</span><span class="p">.</span><span class="nx">prototype</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">bound</span><span class="p">;</span>
+  <span class="p">}</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><h4 id="2-">2. 间接引用</h4>
+<p>另一个需要注意的是， 你有可能（有意或者无意地） 创建一个函数的“间接引用”， 在这
+种情况下， 调用这个函数会应用默认绑定规则</p>
+<p>箭头函数并不是使用 function 关键字定义的， 而是使用被称为“胖箭头” 的操作符 =&gt; 定
+义的。 箭头函数不使用 this 的四种标准规则， 而是根据外层（函数或者全局） 作用域来决
+定 this。箭头函数的绑定无法被修改。</p>
+<h4 id="-">现在我们可以根据优先级来判断函数在某个调用位置应用的是哪条规则。 可以按照下面的顺序来进行判断：</h4>
+<ol>
+<li>函数是否在 new 中调用（new 绑定） ？ 如果是的话 this 绑定的是新创建的对象。
+var bar = new foo()</li>
+<li>函数是否通过 call、 apply（显式绑定） 或者硬绑定调用？ 如果是的话， this 绑定的是
+指定的对象。
+var bar = foo.call(obj2)</li>
+<li>函数是否在某个上下文对象中调用（隐式绑定） ？ 如果是的话， this 绑定的是那个上
+下文对象。
+var bar = obj1.foo()</li>
+<li>如果都不是的话， 使用默认绑定。 如果在严格模式下， 就绑定到 undefined， 否则绑定到
+全局对象。
+var bar = foo()</li>
+</ol>
+<h4 id="-new---">使用 new 来调用函数， 或者说发生构造函数调用时， 会自动执行下面的操作。</h4>
+<ol>
+<li>创建（或者说构造） 一个全新的对象。</li>
+<li>这个新对象会被执行 [[ 原型 ]] 连接。</li>
+<li>这个新对象会绑定到函数调用的 this。</li>
+<li>如果函数没有返回其他对象， 那么 new 表达式中的函数调用会自动返回这个新对象.</li>
+</ol>
+<h4 id="-this---">如果要判断一个运行中函数的 this 绑定， 就需要找到这个函数的直接调用位置。 找到之后</h4>
+<p>就可以顺序应用下面这四条规则来判断 this 的绑定对象。</p>
+<ol>
+<li>由 new 调用？ 绑定到新创建的对象。</li>
+<li>由 call 或者 apply（或者 bind） 调用？ 绑定到指定的对象。</li>
+<li>由上下文对象调用？ 绑定到那个上下文对象。</li>
+<li>默认： 在严格模式下绑定到 undefined， 否则绑定到全局对象。</li>
+</ol>
+]]></content>
+		</item>
 		
 		<item>
 			<title>JS 函数的执行时机</title>
@@ -906,6 +1206,7 @@ href:
 <li>不懂的标签和属性 MDN 上查找</li>
 <li>标签要理解记忆，死记容易忘记</li>
 <li>前端工程师最大的忌讳是图片在网页上变形</li>
+<li>手机浏览<!-- raw HTML omitted --></li>
 </ol>
 ]]></content>
 		</item>
@@ -1074,6 +1375,194 @@ git commit -v
 git pull
 git push origin master
 </code></pre>]]></content>
+		</item>
+		
+		<item>
+			<title></title>
+			<link>https://wuchuan.monster/posts/js/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/js/</guid>
+			<description>new命令的原理 使用new命令时，它后面的函数依次执行下面的步骤。
+创建一个空对象，作为将要返回的对象实例。 将这个空对象的原型，指向构造函数的prototype属性。 将这个空对象赋值给函数内部的this关键字。 开始执行构造函数内部的代码。
+重要1:JS公式 第一个重要知识：JS公式 对象.__proto__===其构造函数.prototype JS唯一公式，如果不会就套公式
+重要2:根公理 Object.prototype是所有对象的(直接或间接)原型 加了一个直接或间接，所谓公理就是规定好的
+重要3：函数公理 所有函数都是由Function构造的 任何函数.proto === Function.prototype 任意函数有Object/Array/Function
+除了静态方法，还有不少方法定义在Object.prototype对象。它们称为实例方法，所有Object的实例对象都继承了这些方法。
+Object实例对象的方法，主要有以下六个。
+Object.prototype.valueOf()：返回当前对象对应的值。 Object.prototype.toString()：返回当前对象对应的字符串形式。 Object.prototype.toLocaleString()：返回当前对象对应的本地字符串形式。 Object.prototype.hasOwnProperty()：判断某个属性是否为当前对象自身的属性，还是继承自原型对象的属性。 Object.prototype.isPrototypeOf()：判断当前对象是否为另一个对象的原型。 Object.prototype.propertyIsEnumerable()：判断某个属性是否可枚举。
+JSON 格式（JavaScript Object Notation 的缩写）
+this就是属性或方法“当前”所在的对象 内部的this就会指向f运行时所在的对象（本例是顶层对象）。 现在问题就来了，由于函数可以在不同的运行环境执行，所以需要有一种机制，能够在函数体内部获得当前的运行环境（context）。所以，this就出现了，它的设计目的就是在函数体内部，指代函数当前的运行环境。
+this主要有以下几个使用场合。
+（1）全局环境
+全局环境使用this，它指的就是顶层对象window。
+（2）构造函数
+构造函数中的this，指的是实例对象。
+（3）对象的方法
+如果对象的方法里面包含this，this的指向就是方法运行时所在的对象。该方法赋值给另一个对象，就会改变this的指向。</description>
+			<content type="html"><![CDATA[<p>new命令的原理
+使用new命令时，它后面的函数依次执行下面的步骤。</p>
+<p>创建一个空对象，作为将要返回的对象实例。
+将这个空对象的原型，指向构造函数的prototype属性。
+将这个空对象赋值给函数内部的this关键字。
+开始执行构造函数内部的代码。</p>
+<p>重要1:JS公式
+第一个重要知识：JS公式
+对象.__proto__===其构造函数.prototype
+JS唯一公式，如果不会就套公式</p>
+<p>重要2:根公理
+Object.prototype是所有对象的(直接或间接)原型
+加了一个直接或间接，所谓公理就是规定好的</p>
+<p>重要3：函数公理
+所有函数都是由Function构造的
+任何函数.<strong>proto</strong> === Function.prototype
+任意函数有Object/Array/Function</p>
+<p>除了静态方法，还有不少方法定义在Object.prototype对象。它们称为实例方法，所有Object的实例对象都继承了这些方法。</p>
+<p>Object实例对象的方法，主要有以下六个。</p>
+<p>Object.prototype.valueOf()：返回当前对象对应的值。
+Object.prototype.toString()：返回当前对象对应的字符串形式。
+Object.prototype.toLocaleString()：返回当前对象对应的本地字符串形式。
+Object.prototype.hasOwnProperty()：判断某个属性是否为当前对象自身的属性，还是继承自原型对象的属性。
+Object.prototype.isPrototypeOf()：判断当前对象是否为另一个对象的原型。
+Object.prototype.propertyIsEnumerable()：判断某个属性是否可枚举。</p>
+<p>JSON 格式（JavaScript Object Notation 的缩写）</p>
+<p>this就是属性或方法“当前”所在的对象
+内部的this就会指向f运行时所在的对象（本例是顶层对象）。
+现在问题就来了，由于函数可以在不同的运行环境执行，所以需要有一种机制，能够在函数体内部获得当前的运行环境（context）。所以，this就出现了，它的设计目的就是在函数体内部，指代函数当前的运行环境。</p>
+<p>this主要有以下几个使用场合。</p>
+<p>（1）全局环境</p>
+<p>全局环境使用this，它指的就是顶层对象window。</p>
+<p>（2）构造函数</p>
+<p>构造函数中的this，指的是实例对象。</p>
+<p>（3）对象的方法</p>
+<p>如果对象的方法里面包含this，this的指向就是方法运行时所在的对象。该方法赋值给另一个对象，就会改变this的指向。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title></title>
+			<link>https://wuchuan.monster/posts/%E6%8E%92%E5%BA%8F/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>https://wuchuan.monster/posts/%E6%8E%92%E5%BA%8F/</guid>
+			<description>let sort = (numbers) =&amp;gt; { if(numbers.length &amp;gt; 2){ let index = minIndex(numbers) let min = numbers[index] numbers.splice(index, 1) return [min].concat(sort(numbers)) }else{ return numbers[0]&amp;lt;numbers[1] ? numbers : numbers.reverse() } }
+let minIndex = (numbers) =&amp;gt; let index = 0 for(let i=1; i&amp;lt;numbers.length; i++){ if(numbers[i] &amp;lt; numbers[index]){ index = i } } return index }
+let sort = (numbers) =&amp;gt; { for(let i=0; i&amp;lt;???; i++){ let index = minIndex(numbers) // index 是当前最小数的下标 // index 对应的数应该放到 i 处 swap(numbers, index, i) // swap 还没实现 // index、i 都是 index 的意思，建议 i 改名 } }</description>
+			<content type="html"><![CDATA[<p>let sort = (numbers) =&gt; {
+if(numbers.length &gt; 2){
+let index = minIndex(numbers)
+let min = numbers[index]
+numbers.splice(index, 1)
+return [min].concat(sort(numbers))
+}else{
+return numbers[0]&lt;numbers[1] ? numbers :
+numbers.reverse()
+}
+}</p>
+<p>let minIndex = (numbers) =&gt;
+let index = 0
+for(let i=1; i&lt;numbers.length; i++){
+if(numbers[i] &lt; numbers[index]){
+index = i
+}
+}
+return index
+}</p>
+<p>let sort = (numbers) =&gt; {
+for(let i=0; i&lt;???; i++){
+let index = minIndex(numbers)
+// index 是当前最小数的下标
+// index 对应的数应该放到 i 处
+swap(numbers, index, i) // swap 还没实现
+// index、i 都是 index 的意思，建议 i 改名
+}
+}</p>
+<p>let swap = (array, i, j) =&gt; {
+let temp = array[i]
+array[i] = array[j]
+array[j] = temp
+}
+swap(numbers, 1, 2)</p>
+<p>// 选择排序最终代码</p>
+<p>let sort = (numbers) =&gt; {
+for(let i=0; i&lt; numbers.length -1; i++){
+console.log(<code>----</code>) //这个log很精髓
+console.log(<code>i: ${i}</code>)
+let index = minIndex(numbers.slice(i))+ i
+console.log(<code>index: ${index}</code>)
+console.log(<code>min: ${numbers[index]}</code>)
+if(index!==i){
+swap(numbers, index, i)
+console.log(<code>swap ${index}: ${i}</code>)
+console.log(numbers)
+}
+}
+return numbers
+}</p>
+<p>let swap = (array, i, j) =&gt; {
+let temp = array[i]
+array[i] = array[j]
+array[j] = temp
+}
+let minIndex = (numbers) =&gt; {
+let index = 0
+for(let i=1; i&lt;numbers.length; i++){
+if(numbers[i] &lt; numbers[index]){
+index = i
+}
+}
+return index
+}</p>
+<p>// 快速排序</p>
+<p>let quickSort = arr =&gt; {
+　　if (arr.length &lt;= 1) { return arr; }
+　　let pivotIndex = Math.floor(arr.length / 2);
+　　let pivot = arr.splice(pivotIndex, 1)[0];
+　　let left = [];
+　　let right = [];
+　　for (let i = 0; i &lt; arr.length; i++){
+　　　　if (arr[i] &lt; pivot) { left.push(arr[i])
+　　　　} else { right.push(arr[i]) }
+　　}
+　　return quickSort(left).concat(
+[pivot], quickSort(right) )
+}</p>
+<p>// 归并排序
+let mergeSort = arr =&gt;{
+let k = arr.length
+if(k===1){return arr}
+let left = arr.slice(0, Math.floor(k/2))
+let right = arr.slice(Math.floor(k/2))
+return merge(mergeSort(left), mergeSort(right))
+}
+let merge = (a, b) =&gt; {
+if(a.length === 0) return b
+if(b.length === 0) return a
+return a[0] &gt; b[0] ?
+[b[0]].concat(merge(a, b.slice(1))) :
+[a[0]].concat(merge(a.slice(1), b))
+}</p>
+<p>// 计数排序
+let countSort = arr =&gt;{
+let hashTable = {}, max = 0, result = []
+for(let i=0; i&lt;arr.length; i++){ // 遍历数组
+if(!(arr[i] in hashTable)){ // 视频中这一行写错
+hashTable[arr[i]] = 1
+}else{
+hashTable[arr[i]] += 1
+}
+if(arr[i] &gt; max) {max = arr[i]}
+}
+for(let j=0; j&lt;=max; j++){ // 遍历哈希表
+if(j in hashTable){
+for(let i = 0; i&lt;hashTable[j]; i++){
+result.push(j)
+}
+}
+}
+return result
+}</p>
+]]></content>
 		</item>
 		
 	</channel>
